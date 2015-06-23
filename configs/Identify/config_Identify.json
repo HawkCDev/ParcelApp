@@ -1,0 +1,523 @@
+{
+  "identifylayeroption": "visible",
+  "identifytolerance": 5,
+  "defaultzoomscale": 5000,
+  "keepidentifyactive": true,
+  "returngeometryforzoom": true,
+  "enablelineselect": false,
+  "enablefreehandlineselect": true,
+  "enablepolylineselect": false,
+  "enableextentselect": false,
+  "enabletriangleselect": false,
+  "enablepolyselect": true,
+  "enablefreehandpolyselect": true,
+  "enablecircleselect": true,
+  "enableellipseselect": true,
+  "enablegraphicclickinfo": true,
+  "usemaptime": false,
+  "infoautoclosemilliseconds": 5000,
+  "autoactivatedtool": "point",
+  "disablelayerdropdown": false,
+  "disablealllayerschoice": true,
+  "replacenullswithemptystring": true,
+  "enablemouseoverrecordinfo": true,
+  "enablemouseovergraphicsinfo": true,
+  "layers": {
+    "onlythese": false,
+    "layer": [
+      {
+        "name": "Zoning",
+        "url": "http://gistoolbox.harnett.org/arcgis/rest/services/Planning/Planning/MapServer",
+        "id": 1,
+        "zoomscale": "1:10000",
+        "forcescale": true,
+        "fields": {
+          "all": false,
+          "field": [
+            {
+              "name": "Zoning Classification",
+              "alias": "Zoning Classification"
+            },
+            {
+              "name": "Zoning Description",
+              "alias": "Zoning Description"
+            },
+            {
+              "name": "Last Update Date",
+              "alias": "Last Update Date",
+              "isdate": true
+            },
+            {
+              "name": "Last Editor",
+              "alias": "Last Editor"
+            },
+            {
+              "name": "CreateDate",
+              "alias": "CreateDate",
+              "isdate": true
+            },
+            {
+              "name": "CreatedBy",
+              "alias": "CreatedBy"
+            },
+            {
+              "name": "LastEditDate",
+              "alias": "LastEditDate",
+              "isdate": true
+            },
+            {
+              "name": "LastEditBy",
+              "alias": "LastEditBy"
+            },
+            {
+              "name": "EffectiveDate",
+              "alias": "EffectiveDate",
+              "isdate": true
+            }
+          ]
+        },
+        "links": {}
+      },
+      {
+        "name": "Land Use Current (2006)",
+        "url": "http://gistoolbox.harnett.org/arcgis/rest/services/Planning/Planning/MapServer",
+        "id": 2,
+        "zoomscale": "",
+        "forcescale": false,
+        "fields": {
+          "all": false,
+          "field": [
+            {
+              "name": "Land Use Code",
+              "alias": "Land Use Code"
+            },
+            {
+              "name": "Land Use Description",
+              "alias": "Land Use Description"
+            },
+            {
+              "name": "Last Update Date",
+              "alias": "Last Update Date",
+              "isdate": true
+            },
+            {
+              "name": "Last Editor",
+              "alias": "Last Editor"
+            },
+            {
+              "name": "CreateDate",
+              "alias": "CreateDate",
+              "isdate": true
+            },
+            {
+              "name": "CreatedBy",
+              "alias": "CreatedBy"
+            },
+            {
+              "name": "LastEditDate",
+              "alias": "LastEditDate",
+              "isdate": true
+            }
+          ]
+        },
+        "links": {}
+      },
+      {
+        "name": "Subdivision Major",
+        "url": "http://gistoolbox.harnett.org/arcgis/rest/services/Planning/Subdivisions/MapServer",
+        "id": 4,
+        "zoomscale": "",
+        "forcescale": false,
+        "fields": {
+          "all": false,
+          "field": [
+            {
+              "name": "SUBDIVISION_NAME",
+              "alias": "SUBDIVISION_NAME"
+            },
+            {
+              "name": "SUBDIVISION_TYPE",
+              "alias": "SUBDIVISION_TYPE"
+            },
+            {
+              "name": "PHASE_NAME",
+              "alias": "PHASE_NAME"
+            },
+            {
+              "name": "SECTION_NAME",
+              "alias": "SECTION_NAME"
+            },
+            {
+              "name": "TOTAL_LOTS",
+              "alias": "TOTAL_LOTS",
+              "isnumber": true
+            },
+            {
+              "name": "LOCATION",
+              "alias": "LOCATION"
+            },
+            {
+              "name": "COMMENTS",
+              "alias": "COMMENTS"
+            },
+            {
+              "name": "PLAT_BOOK",
+              "alias": "PLAT_BOOK"
+            },
+            {
+              "name": "PLAT_PAGE",
+              "alias": "PLAT_PAGE"
+            },
+            {
+              "name": "RECORDED_DATE",
+              "alias": "RECORDED_DATE",
+              "isdate": true
+            },
+            {
+              "name": "ACRES",
+              "alias": "ACRES",
+              "isnumber": true
+            },
+            {
+              "name": "SHAPE.STArea()",
+              "alias": "SHAPE.STArea()",
+              "isnumber": true
+            },
+            {
+              "name": "SHAPE.STLength()",
+              "alias": "SHAPE.STLength()",
+              "isnumber": true
+            }
+          ]
+        },
+        "links": {}
+      },
+      {
+        "name": "Subdivision Minor",
+        "url": "http://gistoolbox.harnett.org/arcgis/rest/services/Planning/Subdivisions/MapServer",
+        "id": 2,
+        "zoomscale": "",
+        "forcescale": false,
+        "fields": {
+          "all": false,
+          "field": [
+            {
+              "name": "SUBDIVISION_NAME",
+              "alias": "SUBDIVISION_NAME"
+            },
+            {
+              "name": "SUBDIVISION_TYPE",
+              "alias": "SUBDIVISION_TYPE"
+            },
+            {
+              "name": "PHASE_NAME",
+              "alias": "PHASE_NAME"
+            },
+            {
+              "name": "SECTION_NAME",
+              "alias": "SECTION_NAME"
+            },
+            {
+              "name": "TOTAL_LOTS",
+              "alias": "TOTAL_LOTS",
+              "isnumber": true
+            },
+            {
+              "name": "LOCATION",
+              "alias": "LOCATION"
+            },
+            {
+              "name": "COMMENTS",
+              "alias": "COMMENTS"
+            },
+            {
+              "name": "PLAT_BOOK",
+              "alias": "PLAT_BOOK"
+            },
+            {
+              "name": "PLAT_PAGE",
+              "alias": "PLAT_PAGE"
+            },
+            {
+              "name": "RECORDED_DATE",
+              "alias": "RECORDED_DATE",
+              "isdate": true
+            },
+            {
+              "name": "ACRES",
+              "alias": "ACRES",
+              "isnumber": true
+            },
+            {
+              "name": "SHAPE.STArea()",
+              "alias": "SHAPE.STArea()",
+              "isnumber": true
+            },
+            {
+              "name": "SHAPE.STLength()",
+              "alias": "SHAPE.STLength()",
+              "isnumber": true
+            }
+          ]
+        },
+        "links": {}
+      },
+      {
+        "name": "Subdivision MHP",
+        "url": "http://gistoolbox.harnett.org/arcgis/rest/services/Planning/Subdivisions/MapServer",
+        "id": 0,
+        "zoomscale": "",
+        "forcescale": false,
+        "fields": {
+          "all": false,
+          "field": [
+            {
+              "name": "SUBDIVISION_NAME",
+              "alias": "SUBDIVISION_NAME"
+            },
+            {
+              "name": "SUBDIVISION_TYPE",
+              "alias": "SUBDIVISION_TYPE"
+            },
+            {
+              "name": "PHASE_NAME",
+              "alias": "PHASE_NAME"
+            },
+            {
+              "name": "SECTION_NAME",
+              "alias": "SECTION_NAME"
+            },
+            {
+              "name": "TOTAL_LOTS",
+              "alias": "TOTAL_LOTS",
+              "isnumber": true
+            },
+            {
+              "name": "LOCATION",
+              "alias": "LOCATION"
+            },
+            {
+              "name": "COMMENTS",
+              "alias": "COMMENTS"
+            },
+            {
+              "name": "PLAT_BOOK",
+              "alias": "PLAT_BOOK"
+            },
+            {
+              "name": "PLAT_PAGE",
+              "alias": "PLAT_PAGE"
+            },
+            {
+              "name": "RECORDED_DATE",
+              "alias": "RECORDED_DATE",
+              "isdate": true
+            },
+            {
+              "name": "ACRES",
+              "alias": "ACRES",
+              "isnumber": true
+            },
+            {
+              "name": "SHAPE.STArea()",
+              "alias": "SHAPE.STArea()",
+              "isnumber": true
+            },
+            {
+              "name": "SHAPE.STLength()",
+              "alias": "SHAPE.STLength()",
+              "isnumber": true
+            }
+          ]
+        },
+        "links": {}
+      },
+      {
+        "name": "Subdivision Exempt",
+        "url": "http://gistoolbox.harnett.org/arcgis/rest/services/Planning/Subdivisions/MapServer",
+        "id": 1,
+        "zoomscale": "",
+        "forcescale": false,
+        "fields": {
+          "all": false,
+          "field": [
+            {
+              "name": "SUBDIVISION_NAME",
+              "alias": "SUBDIVISION_NAME"
+            },
+            {
+              "name": "SUBDIVISION_TYPE",
+              "alias": "SUBDIVISION_TYPE"
+            },
+            {
+              "name": "PHASE_NAME",
+              "alias": "PHASE_NAME"
+            },
+            {
+              "name": "SECTION_NAME",
+              "alias": "SECTION_NAME"
+            },
+            {
+              "name": "TOTAL_LOTS",
+              "alias": "TOTAL_LOTS",
+              "isnumber": true
+            },
+            {
+              "name": "LOCATION",
+              "alias": "LOCATION"
+            },
+            {
+              "name": "COMMENTS",
+              "alias": "COMMENTS"
+            },
+            {
+              "name": "PLAT_BOOK",
+              "alias": "PLAT_BOOK"
+            },
+            {
+              "name": "PLAT_PAGE",
+              "alias": "PLAT_PAGE"
+            },
+            {
+              "name": "RECORDED_DATE",
+              "alias": "RECORDED_DATE",
+              "isdate": true
+            },
+            {
+              "name": "ACRES",
+              "alias": "ACRES",
+              "isnumber": true
+            },
+            {
+              "name": "SHAPE.STArea()",
+              "alias": "SHAPE.STArea()",
+              "isnumber": true
+            },
+            {
+              "name": "SHAPE.STLength()",
+              "alias": "SHAPE.STLength()",
+              "isnumber": true
+            }
+          ]
+        },
+        "links": {}
+      },
+      {
+        "name": "Address Points",
+        "url": "http://gistoolbox.harnett.org/arcgis/rest/services/General/Address_types/MapServer",
+        "id": 0,
+        "zoomscale": "",
+        "forcescale": false,
+        "fields": {
+          "all": false,
+          "field": [
+            {
+              "name": "ADDRESS_TYPE",
+              "alias": "ADDRESS_TYPE"
+            },
+            {
+              "name": "ADDRESS_NUMBER",
+              "alias": "ADDRESS_NUMBER",
+              "isnumber": true
+            },
+            {
+              "name": "ROAD",
+              "alias": "ROAD"
+            },
+            {
+              "name": "FULL_ADDRESS",
+              "alias": "FULL_ADDRESS"
+            },
+            {
+              "name": "CITY",
+              "alias": "CITY"
+            },
+            {
+              "name": "ZIP",
+              "alias": "ZIP"
+            },
+            {
+              "name": "ESN",
+              "alias": "ESN"
+            },
+            {
+              "name": "SUBPIN",
+              "alias": "SUBPIN"
+            },
+            {
+              "name": "SUBPID",
+              "alias": "SUBPID"
+            }
+          ]
+        },
+        "links": {}
+      }
+    ],
+    "excludelayer": []
+  },
+  "symbols": {
+    "simplemarkersymbol": {
+      "color": [
+        68,
+        140,
+        203,
+        153
+      ],
+      "size": 8.000250000000001,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriSMS",
+      "style": "esriSMSCircle",
+      "outline": {
+        "color": [
+          255,
+          255,
+          255,
+          153
+        ],
+        "width": 0.75,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      }
+    },
+    "picturemarkersymbol": {
+      "height": "20",
+      "width": "20",
+      "type": "esriPMS",
+      "angle": "0"
+    },
+    "simplelinesymbol": {
+      "color": [
+        247,
+        150,
+        70,
+        94
+      ],
+      "width": 2.25,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "simplefillsymbol": {
+      "color": [
+        251,
+        164,
+        93,
+        77
+      ],
+      "outline": {
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "width": 0.75,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  }
+}

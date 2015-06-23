@@ -1,0 +1,8 @@
+{
+  "serviceURL": "http://gistoolbox.harnett.org/arcgis/rest/services/Resources/ExportWebMap/GPServer/Export%20Web%20Map",
+  "defaultTitle": "Harnett County GIS",
+  "defaultAuthor": "Harnett County GIS",
+  "defaultCopyright": "",
+  "defaultFormat": "PDF",
+  "defaultLayout": "Landscape (8.5x11)"
+}
